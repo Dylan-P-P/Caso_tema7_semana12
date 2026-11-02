@@ -119,6 +119,20 @@ namespace Caso_tema7_semana12
                         numeros_naturales_con_recursividad(N3);
                         break;
                     case 7:
+                        Console.WriteLine("Ingrese el tamaño del arreglo: ");
+                        int tamaño = int.Parse(Console.ReadLine());
+                        int[] arreglo = new int[tamaño];
+                        for (int i = 0; i < tamaño; i++)
+                        {
+                            Console.WriteLine($"Ingrese el elemento {i + 1}: ");
+                            arreglo[i] = int.Parse(Console.ReadLine());
+                        }
+                        Console.WriteLine("Los elementos del arreglo son: ");
+                        for (int i = 0; i < tamaño; i++)
+                        {
+                            Console.WriteLine(arreglo[i]);
+                        }
+                        Console.WriteLine("El promedio es: " + arreglo.Average());
                         break;
                     case 8:
                         valor = false;
